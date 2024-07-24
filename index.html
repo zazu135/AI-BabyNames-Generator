@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Baby Names Generator</title>
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="index.js"/>
 </head>
 <body>
+    <div class="container">
     <h1>Congratulations on your bundle of joy!</h1>
+    
     <main>
         <form>
-            <input type="text" placeholder="Are you having a boy or a girl?" autofocus required
-            autocomplete="off"/>
-            <input type="submit"/>
+            <input type="text" placeholder="Tell me...Boy or Girl?" autofocus required
+            autocomplete="off"
+            class="instructions"/>
+
+            <input type="submit" class="submit-button"/>
         </form>
-        <div>
+        <div class="babynames">
             The suggested name will appear here!
         </div>
     </main>
@@ -21,5 +27,6 @@
         This AI Project was coded by <a href="https://github.com/zazu135" target="_blank">Sarah Zalloum</a> and is open sourced on<a href="" target="_blank">Github</a>
         and hosted on <a href="" target="_blank">Netlify.</a>
     </footer>
+    </div>
 </body>
 </html>
