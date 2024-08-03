@@ -3,44 +3,45 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-a{
-    color:rgb(41, 19, 235);
-}
-.container {
-    margin: 140px auto;
-    max-width: 400px;
-   
+a {
+    color: rgb(41, 19, 235);
 }
 
-header{
-    margin-bottom:20px;
+.container {
+    margin: 140px auto;
+    max-width: 600px;
+    
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 h1 {
-text-align: center;
-padding:10px;
-font-weight: 700;
-font-size: 37px;
-line-height: 1;
-color:white;
-background-color: teal;
-box-shadow:3px 4px 10px 4px teal;
-border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: white;
+    background-color: teal;
+    box-shadow: 3px 4px 10px 4px teal;
+    border-radius: 5px;
 }
 
 form {
-    padding:30px;
+    padding: 35px;
     background-color: white;
     border-radius: 5px;
-    display:flex;
-    box-shadow:0px 4px 30px 0px teal;
+    display: flex;
+    box-shadow: 0px 4px 30px 0px teal;
 }
 
 .instructions {
-    padding: 8px;
+    padding: 10px;
     border: 2px solid teal;
-    width:80%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 19px;
     border-radius: 5px;
 }
 
@@ -50,8 +51,8 @@ form {
     color: white;
     border: none;
     width: 150px;
-    font-size:18px;
-    border-radius:5px;
+    font-size: 20px;
+    border-radius: 5px;
     padding: 12px 25px;
 }
 
@@ -59,21 +60,16 @@ form {
     text-align: center;
     font-size: 24px;
     background-color: white;
-    padding:40px;
+    padding: 40px;
     line-height: 24px;
     font-weight: normal;
     border-left: 3px solid teal;
     margin-top: 20px;
     border-radius: 5px;
-    box-shadow:0px 4px 30px 0px teal;
+    box-shadow: 0px 4px 30px 0px teal;
 }
 
 footer {
     margin-top: 40px;
     text-align: center;
-
-
 }
-
-
-
