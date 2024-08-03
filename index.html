@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Baby Names Generator</title>
-<link rel="stylesheet" href="index.css"/>
-<link rel="stylesheet" href="index.js"/>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
     <div class="container">
-    <h1>Congratulations on your bundle of joy!</h1>
-    
-    <main>
-        <form>
-            <input type="text" placeholder="Tell me...Boy or Girl?" autofocus required
-            autocomplete="off"
-            class="instructions"/>
+        <h1>Congratulations on your bundle of joy!</h1>
 
-            <input type="submit" class="submit-button"/>
-        </form>
-        <div class="babynames">
-            The suggested name will appear here!
-        </div>
-    </main>
-    <footer>
-        This AI Project was coded by <a href="https://github.com/zazu135" target="_blank">Sarah Zalloum</a> and is open sourced on<a href="" target="_blank">Github</a>
-        and hosted on <a href="" target="_blank">Netlify.</a>
-    </footer>
+        <main>
+            <form id="babynames-generator">
+                <input type="text" placeholder="Tell me...Boy or Girl?" 
+                       autofocus required
+                       autocomplete="off"
+                       class="instructions" />
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+            <div class="babynames">
+                The suggested name will appear here!
+            </div>
+        </main>
+
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
