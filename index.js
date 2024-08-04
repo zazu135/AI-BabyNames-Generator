@@ -11,28 +11,19 @@ function displaybabynames(response) {
     }
 }
 
-function generatebabynames(event) {
-    event.preventDefault();
+function generatebabynames(gender) {
+    let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
+    let prompt = `User instructions are: Generate 10 baby names for a ${gender}`;
+    let context = "You are a baby name generator and you love to generate 10 unique names in basic HTML in numbered list. Please follow the user instructions and generate 10 names based on the provided instructions ONLY. Do not include a title.";
+    let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-    let instructionsInput = document.querySelector(".instructions");
-    let inputValue = instructionsInput.value.trim();
-    
-    if (!inputValue) {
-        document.querySelector('.babynames').textContent = "Please enter 'Boy' or 'Girl'.";
-        return;
-    }
-
-    let apiKey = "1feb8a7b2d092f38fof7t1c4fa0416b7";
-    let prompt = `User instructions are: Generate 5 baby names for a ${inputValue}`;
-    let context = "You are a baby name generator and you love to generate 5 names in basic HTML and separate each line with a </br>. Please follow the user instructions and generate 5 names based on the provided instructions ONLY. Do not include a title.";
-    let url = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
-
-    axios.post(url)
-        .then(displaybabynames)
-        .catch(error => {
-            document.querySelector('.babynames').textContent = "Failed to generate a name. Please try again.";
-        });
+    axios.get(url).then(displaybabynames);
 }
 
-let babynamesFormElement = document.querySelector("#babynames-generator");
-babynamesFormElement.addEventListener("submit", generatebabynames);
+document.querySelector(".btn-boy").addEventListener("click", function() {
+    generatebabynames("boy");
+});
+
+document.querySelector(".btn-girl").addEventListener("click", function() {
+    generatebabynames("girl");
+});
