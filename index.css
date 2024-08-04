@@ -1,6 +1,6 @@
 body {
-    background-color: rgba(219, 229, 228, 0.861);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 a {
@@ -9,8 +9,7 @@ a {
 
 .container {
     margin: 140px auto;
-    max-width: 600px;
-    
+    max-width: 600px; 
 }
 
 header {
@@ -19,54 +18,65 @@ header {
 
 h1 {
     text-align: center;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 40px;
+    padding: 20px;
+    font-weight:400;
+    font-size: 45px;
     line-height: 1;
     color: white;
-    background-color: teal;
-    box-shadow: 3px 4px 10px 4px teal;
+    background: linear-gradient(#fa93c7, rgb(105, 202, 240));
     border-radius: 5px;
+    box-shadow: 3px 4px 10px 4px rgb(159, 161, 162);
+}
+
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 form {
     padding: 35px;
+    text-align: center;
     background-color: white;
     border-radius: 5px;
-    display: flex;
-    box-shadow: 0px 4px 30px 0px teal;
+    box-shadow: 3px 4px 10px 4px rgb(159, 161, 162);
 }
 
 .instructions {
     padding: 10px;
-    border: 2px solid teal;
+    border: 3px solid black;
     width: 80%;
-    font-size: 19px;
     border-radius: 5px;
-}
-
-.submit-button {
-    margin-left: 10px;
-    background: teal;
-    color: white;
-    border: none;
-    width: 150px;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 12px 25px;
 }
 
 .babynames {
-    text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     background-color: white;
     padding: 40px;
-    line-height: 24px;
-    font-weight: normal;
-    border-left: 3px solid teal;
-    margin-top: 20px;
+    line-height: 30px;
+    border-left: 3px solid black;
     border-radius: 5px;
-    box-shadow: 0px 4px 30px 0px teal;
+    box-shadow: 3px 4px 10px 4px rgb(159, 161, 162);
+}
+
+.btn-boy {
+    background-color: rgb(105, 202, 240); 
+    border-color:rgb(10, 144, 196);
+    color:whitesmoke;
+    margin-right: 12px;
+    padding:30px;
+    border-radius: 5px;
+    
+}
+
+.btn-girl {
+    background-color: #fa93c7; 
+    border-color: rgb(242, 85, 211);
+    color: whitesmoke;
+    padding:30px;
+    border-radius: 5px;
+
 }
 
 footer {
