@@ -4,11 +4,11 @@ body {
 }
 
 a {
-    color: rgb(41, 19, 235);
+    color: rgb(250, 92, 181);
 }
 
 .container {
-    margin: 140px auto;
+    margin: 100px auto;
     max-width: 600px; 
 }
 
@@ -50,16 +50,6 @@ form {
     border-radius: 5px;
 }
 
-.babynames {
-    font-size: 25px;
-    background-color: white;
-    padding: 40px;
-    line-height: 30px;
-    border-left: 3px solid black;
-    border-radius: 5px;
-    box-shadow: 3px 4px 10px 4px rgb(159, 161, 162);
-}
-
 .btn-boy {
     background-color: rgb(105, 202, 240); 
     border-color:rgb(10, 144, 196);
@@ -79,7 +69,21 @@ form {
 
 }
 
-footer {
-    margin-top: 40px;
-    text-align: center;
+.babynames {
+    font-size: 25px;
+    background-color: white;
+    padding: 30px;
+    line-height: 30px;
+    border-left: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px 4px rgb(159, 161, 162);
 }
+
+
+footer {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
